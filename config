@@ -1,0 +1,7 @@
+Host va_intel
+    HostName 10.216.179.127
+    User amd
+
+Host va_amd
+    HostName 10.216.172.152
+    User amd
