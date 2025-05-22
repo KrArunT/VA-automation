@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker stop va_app_instance_1 va_app_instance_2 va_app_instance_3 va_app_instance_4 va_app_instance_5 va_app_instance_6 va_app_instance_7 va_app_instance_8 va_app_instance_9 va_app_instance_10 va_app_instance_11 va_app_instance_12
