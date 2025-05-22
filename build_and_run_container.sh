@@ -1,5 +1,5 @@
 docker build -t va_demo_ws_server:latest .
-docker run --rm \
+docker run --rm -d \
   -it \
   -p 8768:8768 \
   -p 15672:15672 \
