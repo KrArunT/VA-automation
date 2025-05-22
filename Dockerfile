@@ -23,9 +23,11 @@ ENV PATH="/root/.local/bin:$PATH"
 RUN pipx install uv
 
 #Setup SSH (optional)
-COPY id_rsa /root/.ssh/id_rsa
+COPY id_ed25519 /root/.ssh/id_ed25519
+#COPY id_rsa /root/.ssh/id_rsa
 COPY config /root/.ssh/config
-RUN chmod 600 /root/.ssh/id_rsa && chmod 644 /root/.ssh/config
+#RUN chmod 600 /root/.ssh/id_rsa && chmod 644 /root/.ssh/config
+RUN chmod 600 /root/.ssh/id_ed25519 && chmod 644 /root/.ssh/config
 #RUN chmod 644 /root/.ssh/config
 
 # Set working directory
